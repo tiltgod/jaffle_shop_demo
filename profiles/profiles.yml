@@ -5,7 +5,7 @@ jaffle_shop:
       type: postgres
       host: postgres-postgresql
       user: postgres
-      password: postgres
+      password: 12345
       port: 5432
       dbname: postgres
       schema: public
