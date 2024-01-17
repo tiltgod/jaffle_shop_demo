@@ -10,3 +10,27 @@ jaffle_shop:
       dbname: postgres
       schema: public
       threads: 1
+
+jaffle_shop_bq:
+  target: bq
+  outputs:
+    bq:
+      type: xxx
+      method: xxx
+      project: xxx
+      dataset: xxx
+      threads: 4 # Must be a value of 1 or greater
+      # These fields come from the service account json keyfile
+      keyfile_json:
+        type: xxx
+        project_id: xxx
+        private_key_id: xxx
+        private_key: xxx
+        client_email: xxx
+        client_id: "xxx"
+        auth_uri: xxx
+        token_uri: xxx
+        auth_provider_x509_cert_url: xxx
+        client_x509_cert_url: xxx
+        
+        
