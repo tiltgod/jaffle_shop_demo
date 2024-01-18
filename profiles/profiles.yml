@@ -2,11 +2,9 @@ jaffle_shop:
   target: dev
   outputs:
     dev:
-      type: postgres
-      host: postgres-postgresql
-      user: postgres
-      password: postgres
-      port: 5432
-      dbname: postgres
-      schema: public
-      threads: 1
+      type: bigquery
+      method: service-account
+      project: intern-tempest-playground
+      dataset: mosquito_zone
+      threads: 1 # Must be a value of 1 or greater
+      keyfile: /opt/airflow/cred/k8s-services-airflow-sc.json
